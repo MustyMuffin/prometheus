@@ -6,6 +6,7 @@ FROM prom/prometheus:v${PROMETHEUS_VERSION}
 
 # Apply this repo's prometheus.yml file
 ADD prometheus.yml /etc/prometheus/
+ADD web.yml /etc/prometheus/
 
 # Sets the Render service name in prometheus.yml
 # using the RENDER_SERVICE_NAME environment variable

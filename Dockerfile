@@ -16,6 +16,6 @@ RUN sed -i "s/RENDER_SERVICE_NAME/${RENDER_SERVICE_NAME}/g" /etc/prometheus/prom
 # plus other config
 CMD [ "--storage.tsdb.path=/var/data/prometheus", \
       "--config.file=/etc/prometheus/prometheus.yml", \
+      "--web.config.file=web.yml",
       "--web.console.libraries=/usr/share/prometheus/console_libraries", \
-      "--web.console.templates=/usr/share/prometheus/consoles", \
-      "--web.config.file=web.yml"]
+      "--web.console.templates=/usr/share/prometheus/consoles",]

@@ -21,8 +21,8 @@ USER nobody
 
 CMD [
   "--storage.tsdb.path=/var/data/prometheus",
-  "--config.file=/etc/prometheus/prometheus.yml",
-  "--web.config.file=/etc/secrets/web.yml",
+  "--config.file=/var/data/prometheus/prometheus.yml",
+  "--web.config.file=/var/data/prometheus/secrets/web.yml",
   "--web.console.libraries=/usr/share/prometheus/console_libraries",
   "--web.console.templates=/usr/share/prometheus/consoles"
 ]

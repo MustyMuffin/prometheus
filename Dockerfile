@@ -33,7 +33,7 @@ USER nobody
 CMD [
   "--storage.tsdb.path=/var/data/prometheus",
   "--config.file=/etc/prometheus/prometheus.yml",
-  "--web.config.file=/etc/prometheus/web.yml",
+  "  --web.config.file=/etc/secrets/web.yml",
   "--web.console.libraries=/usr/share/prometheus/console_libraries",
   "--web.console.templates=/usr/share/prometheus/consoles"
 ]
